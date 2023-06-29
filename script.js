@@ -112,3 +112,5 @@ window.addEventListener('DOMContentLoaded', () => {
     resetButton.addEventListener('click', resetBoard);
     
 });
+
+console.log('Version 1.0.0');
