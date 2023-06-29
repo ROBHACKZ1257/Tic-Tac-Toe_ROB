@@ -90,7 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const resetBoard = () => {
-        board = ['', '', '', '', '', ''];
+        board = ['', '', '', '', '', '', '', '', ''];
         isGameActive = true; 
         announcer.classList.add('hide');
 
