@@ -32,8 +32,8 @@
 .container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     max-width: 300px;
 }
 
@@ -46,6 +46,12 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+}
+
+.container > .cell:nth-child(4),
+.container > .cell:nth-child(5),
+.container > .cell:nth-child(6) {
+    border-top: none; /* Remove top border for cells in the second row */
 }
 
 .playerX {
